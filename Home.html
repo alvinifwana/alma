@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codenest - Web Developer</title>
+    <link rel="stylesheet" href="asset/index.css">
+    <link rel="icon" href="asset/image/logo/lg.png" type="image/png">
+    <!--FRAMEWORK BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--LEAFLET UNTUK MAP-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+     <!--FRAMEWORK AOS ANIMASI-->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="container-fluid p-0">
+        <div id="headerCarousel" class="carousel slide header-slider" data-bs-ride="carousel" data-aos="fade-down">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="asset/image/bg/bg6.jpg" alt="Slide 1">
+                    <div class="carousel-caption d-none d-md-block" data-aos="fade-up">
+                        <h1>Jasa Pembuatan Website Profesional</h1>
+                        <p>Desain modern dan responsif sesuai kebutuhan Anda.</p>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="asset/image/bg/bg7.jpg" alt="Slide 2" >
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1></h1>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="asset/image/bg/bg1.jpg" alt="Slide 3">
+                    <div class="carousel-caption d-none d-md-block" data-aos="fade-up">
+                        <h1>Website yang Menarik dan Interaktif</h1>
+                        <p>Dengan tampilan menarik dan fitur lengkap.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tombol navigasi carousel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    
+    
+    
+
+ <!-- Webiste -->
+<div class="container mt-5" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2 class="text-center mb-4">Kenapa Kamu Harus Punya Website</h2>
+            <p class="section-subtitle mt-4" data-aos="fade-up">
+                Zaman serba Online bisnismu juga harus mudah saat dicari di Internet. 
+                Bayangkan jika bisnismu sulit di cari di Google. Ini adalah masalah besar. 
+                Kamu akan terkalahkan oleh pesaing bisnismu yang sudah punya website dan review positif di Google. 
+                Untuk itu kami akan mewujudkan website bisnismu dengan harga yang relatif terjangkau.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Daftar Client -->
+<section class="container my-5">
+    <h2 class="text-center mb-4" data-aos="fade-up">Kata Mereka Tentang Kami</h2>
+    <div id="clientCarousel" class="carousel slide client-slider" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner" data-aos="fade-up">
+            <div class="carousel-item active">
+                <div class="row d-flex">
+                    <div class="col-md-4" data-aos="fade-left">
+                        <div class="card">
+                            <img src="asset/image/site/site1.jpg" class="card-img-top" alt="Client 1">
+                            <div class="card-body">
+                                <img src="asset/image/org/org1.jpg" alt="Profile" class="profile-pic">
+                                <h5 class="user-name">Haikal Ulum</h5>
+                                <span class="review-time">1 months ago</span>
+                                <div class="rating">★★★★★</div>
+                                <p class="review-text">fast respon..web sitenya mantap jiwa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-left">
+                        <div class="card">
+                            <img src="asset/image/site/site2.png" class="card-img-top" alt="Client 2">
+                            <div class="card-body">
+                                <img src="asset/image/org/org2.jpg" alt="Profile" class="profile-pic">
+                                <h5 class="user-name">Abyss Alpha</h5>
+                                <span class="review-time">2 day ago</span>
+                                <div class="rating">★★★★★</div>
+                                <p class="review-text">Pelayanan bagus, ramah. Best service jos gandos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-left">
+                        <div class="card">
+                            <img src="asset/image/site/site3.png" class="card-img-top" alt="Client 3">
+                            <div class="card-body">
+                                <img src="asset/image/org/org3.jpg" alt="Profile" class="profile-pic">
+                                <h5 class="user-name">Masiga Buana Juli C...</h5>
+                                <span class="review-time">11 months ago</span>
+                                <div class="rating">★★★★★</div>
+                                <p class="review-text">Top! Cepet Dikerjain, Cepet Selesai!.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row d-flex">
+                    <div class="col-md-4" data-aos="fade-left">
+                        <div class="card">
+                            <img src="asset/image/site/site4.png" class="card-img-top" alt="Client 4">
+                            <div class="card-body">
+                                <img src="asset/image/org/org4.jpg" alt="Profile" class="profile-pic">
+                                <h5 class="user-name">Kumar Sh</h5>
+                                <span class="review-time">6 months ago</span>
+                                <div class="rating">★★★★☆</div>
+                                <p class="review-text">Layanan yang sangat membantu dan sangat puas dengan hasil website yang dibuat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-left">
+                        <div class="card">
+                            <img src="asset/image/site/site5.png" class="card-img-top" alt="Client 5">
+                            <div class="card-body">
+                                <img src="asset/image/org/org6.jpg" alt="Profile" class="profile-pic">
+                                <h5 class="user-name">Vonny Aulia</h5>
+                                <span class="review-time">4 months ago</span>
+                                <div class="rating">★★★★★</div>
+                                <p class="review-text">Sangat membantu dalam pembuatan website yang user-friendly.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-left">
+                        <div class="card">
+                            <img src="asset/image/web/web7.jpg" class="card-img-top" alt="Client 6">
+                            <div class="card-body">
+                                <img src="asset/image/org/org1.jpg" alt="Profile" class="profile-pic">
+                                <h5 class="user-name">Zakari y</h5>
+                                <span class="review-time">2 months ago</span>
+                                <div class="rating">★★★★☆</div>
+                                <p class="review-text">Website berjalan lancar!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#clientCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+
+<div class="container portfolio-section" data-aos="fade-up" >
+    <h2 class="text-center mb-4">Portofolio Website</h2>
+    <!-- Kategori Portofolio -->
+    <ul class="nav nav-tabs justify-content-center portfolio-tabs mb-4" id="portfolioTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="landing-tab" data-bs-toggle="tab" data-bs-target="#landing" type="button" role="tab">Landing Page</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="company-tab" data-bs-toggle="tab" data-bs-target="#company" type="button" role="tab">Company Profile</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="catalog-tab" data-bs-toggle="tab" data-bs-target="#catalog" type="button" role="tab">Produk Katalog</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="online-tab" data-bs-toggle="tab" data-bs-target="#online" type="button" role="tab">Toko Online</button>
+      </li>
+    </ul>
+
+    <!-- Tab -->
+    <div class="tab-content" id="portfolioTabContent" >
+      <!-- Landing Page -->
+      <div class="tab-pane fade show active" id="landing" role="tabpanel">
+        <div class="row">
+          <!-- Portfolio item 1 -->
+          <div class="col-md-4 portfolio-item" data-aos="flip-left">
+            <img src="asset/image/web/web1.png" alt="Project Image">
+            <h5>qntmid.com</h5>
+            <p>www.rampaksuar.id</p>
+          </div>
+          <!-- Portfolio item 2 -->
+          <div class="col-md-4 portfolio-item"data-aos="flip-left">
+            <img src="asset/image/web/web2.png" alt="Project Image">
+            <h5>pawons-ndeso.com</h5>
+            <p>www.rampaksuar.id</p>
+          </div>
+          <!-- Portfolio item 3 -->
+          <div class="col-md-4 portfolio-item" data-aos="flip-left">
+            <img src="asset/image/web/web3.png" alt="Project Image">
+            <h5>paketwifi-myrepublic.com</h5>
+            <p>www.rampaksuar.id</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Company Profile Tab -->
+      <div class="tab-pane fade" id="company" role="tabpanel" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-4 portfolio-item"data-aos="flip-left">
+            <img src="asset/image/web/web4.png" alt="Project Image" data-aos="fade-up">
+            <h5>Company Project 1</h5>
+            <p>www.company.com</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produk Katalog Tab -->
+      <div class="tab-pane fade" id="catalog" role="tabpanel" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-4 portfolio-item" data-aos="flip-left">
+            <img src="asset/image/web/web5.png" alt="Project Image" data-aos="fade-up">
+            <h5>Katalog Project 1</h5>
+            <p>www.katalog.com</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toko Online Tab -->
+      <div class="tab-pane fade" id="online" role="tabpanel" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-4 portfolio-item"data-aos="flip-left">
+            <img src="asset/image/web/web6.png" alt="Project Image" data-aos="fade-up">
+            <h5>Toko Online Project 1</h5>
+            <p>www.tokoonline.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Klien Kami -->
+<div class="container mt-5" data-aos="fade-up">
+    <h2 class="text-center">Klien Kami</h2>
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-4">
+        <div class="col" data-aos="fade-up">
+            <img src="asset/image/logo/logo1.png" class="img-fluid" alt="Client Logo 1">
+        </div>
+        <div class="col" data-aos="fade-up">
+            <img src="asset/image/logo/logo2.png" class="img-fluid" alt="Client Logo 2">
+        </div>
+        <div class="col" data-aos="fade-up">
+            <img src="asset/image/logo/logo3.png" class="img-fluid" alt="Client Logo 3">
+        </div>
+        <div class="col" data-aos="fade-up">
+            <img src="asset/image/logo/logo4.png" class="img-fluid" alt="Client Logo 4">
+        </div>
+        <div class="col" data-aos="fade-up">
+            <img src="asset/image/logo/logo5.png" class="img-fluid" alt="Client Logo 5">
+        </div>
+        <div class="col" data-aos="fade-up">
+            <img src="asset/image/logo/logo6.png" class="img-fluid" alt="Client Logo 6">
+        </div>
+        <div class="col" data-aos="fade-up">
+            <img src="asset/image/logo/logo7.png" class="img-fluid" alt="Client Logo 7">
+        </div>
+        <div class="col" data-aos="fade-up">
+            <img src="asset/image/logo/logo8.png" class="img-fluid" alt="Client Logo 8">
+        </div>
+    </div>
+</div>
+
+<div class="container py-5" data-aos="fade-up">
+
+    <!-- Deskripsi Lokasi -->
+    <div class="row mb-4" data-aos="fade-up">
+        <div class="col-lg-6" data-aos="fade-right">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Alamat Kami</h3>
+                    <p class="card-text" data-aos="fade-right">
+                        Kami berlokasi di pusat kota Bandung, dengan akses mudah menuju berbagai tempat penting.
+                        Anda dapat datang langsung atau menghubungi kami melalui informasi di bawah ini.
+                    </p>
+                    <div class="contact-info" data-aos="fade-right">
+                        <div>
+                            <i class="bi bi-geo-alt"></i>
+                            <p>Jl.Soekarno Hatta No. 123</p>
+                        </div>
+                        <div>
+                            <i class="bi bi-telephone"></i>
+                            <p>(088) 123-4567</p>
+                        </div>
+                        <div>
+                            <i class="bi bi-envelope"></i>
+                            <p>Codenest@website.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Map-->
+        <div class="col-lg-6" data-aos="fade-left">
+            <div id="card-map" class="map-container" style="height: 400px;"></div>
+        </div>
+    </div>
+
+</div>
+
+ <!-- Untuk Harga Jasa -->
+<div class="button-container" data-aos="fade-down">
+    <img src="asset/image/arrow.png" alt="Arrow" class="arrow">
+    <a href="Home-Information.html" class="button">Lihat Harga Layanan Jasa</a>
+</div>
+<br><br>
+
+<footer class="footer" data-aos="zoom-out">
+    <div class="container" data-aos="zoom-out">
+        <div class="row">
+        <!-- Copyright-->
+        <div class="row mt-4" >
+            <div class="col-12">
+                <div class="copyright">
+                    <img src="asset/image/logo/logo.png" alt="Facebook" class="img-fluid" width="200px" height="200px" data-aos="flip-left">
+                    <p>Temukan kami di sosial media:</p>
+                        <a href="https://www.instagram.com/Almanact" target="_blank" class="social-icon">
+                            <img src="asset/image/logo/ig.png" alt="Instagram" class="img-fluid" width="45px" height="45px">
+                        </a>
+                        <a href="https://twitter.com/Alma" target="_blank" class="social-icon">
+                            <img src="asset/image/logo/twt.png" alt="Twitter" class="img-fluid" width="40px" height="40px">
+                        </a>
+                        <a href="https://www.facebook.com/Alma" target="_blank" class="social-icon">
+                            <img src="asset/image/logo/fb.png" alt="Facebook" class="img-fluid" width="40px" height="40px"></a>
+                            <br><br>
+                    <p>&copy; 2024 Codenest-By Alma Rosyil Khilaq 22552011262 TIF RP 22 CNS . All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Script untuk Leaflet.js -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<!-- Script untuk AOS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<!-- Bootstrap JS (optional, untuk fitur interaktif seperti modal) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    var map = L.map('card-map').setView([-6.9538, 107.6013], 13); // Koordinat lokasi Bandung, Jl. Soekarno Hatta
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    L.marker([-6.9538, 107.6013]).addTo(map)
+        .bindPopup('Jl. Soekarno Hatta, Bandung')
+        .openPopup();
+</script>
+<script>
+    AOS.init({
+        duration: 1200,
+        easing: 'ease',
+        once: true,
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Codenest - Web Developer</title>
+        <link rel="stylesheet" href="asset/style.css">
+        <link rel="icon" href="asset/image/logo/lg.png" type="image/png">
+        
+        <!--FRAMEWORK BOOSTRAP-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!--FRAMEWORK AOS ANIMASI-->
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="banner" data-aos="zoom-out">
+            <video autoplay loop muted plays-inline>
+                <source src="asset/video/video2.mp4" type="video/mp4">
+            </video>
+            <div class="logo mt-2" >
+                <img class="navbar" src="asset/image/logo/logo.png">
+                 <div id="welcomeMessage"></div>
+            </div>
+            </div>
+            <div class="content">
+                <h1 data-aos="zoom-out">BANGUN WEBSITE IMPIANMU DENGAN CODENEST</h1>
+                <p>Tampil Menarik, Diakses dari Mana Saja!</p>
+                <div>
+                   <button type="button" class="home-button" onclick="window.location.href='Home.html'">Get Started</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1200,
+                easing: 'ease',
+                once: true,
+            });
+        </script>
+        
+        <script>
+            const registeredUser = JSON.parse(localStorage.getItem('registeredUser'));
+            if (registeredUser) {
+                document.getElementById('welcomeMessage').innerHTML = `Hallo, ${registeredUser.username}!`;
+            } else {
+                document.getElementById('welcomeMessage').innerHTML = "Hallo, Guest!";
+            }
+        </script> 
+    </body>
+</html>
